@@ -7,57 +7,85 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
-<body class="bg-blue-800 debug-screens ">
-    <div class="container min-h-screen p-2 mx-auto bg-blue-100 ">
+<body class="bg-blue-900 debug_screen ">
+    <div class="container min-h-screen p-4 mx-auto bg-blue-100">
         <! - page header / headings ->
-
-    <div>
-      <h1>Tom Gonzales home training <br> I'll get you in shape!</h1>
+      <section id="header"></section>
+    <div class="text-center">
+      <h1 class="">Tom Gonzales home training <br> I'll get you in shape!</h1>
       <h2>Muscle building • Functional training • Nutritional advice</h2>
     </div>
-
+    <section class="grid grid-cols-2 gap-4 mt-8 md:gap10" id="image_service"> 
+    
+    
     <! - picture ->
-    <div id = "image">
-      <img src = "./image/tom.jpg" alt = "Tom Gonzales Online Training">
+    <div class="ml-auto " id = "image">
+      <img src = "./image/karolis-milisauskas-eoVdk1z4ihI-unsplash.jpg" alt = "Tom Gonzales Online Training">
     </div>
 
     <! - Services ->
     <div id = "services">
       <h3>I offer you:</h3>
-      <ul>
-        <li>Lessons via Skype and you can record all sessions and watch them again later. </li>
+      <ul class="ml-4 list-disc" >
         <li>Holistic full body training</li>
         <li>Training without equipment</li>
         <li>Pain reduction</li>
+        <li>Lessons via Skype and you can record all sessions and watch them again later. </li>
         <li>Tailored nutrition plans</li>
       </ul>
-      <h3>My qualifications:</h3>
-        <ul>
-          <li>Certified nutritionist</li>
-          <li>Certified fitness trainer</li>
-          <li>5 years of experience in 1: 1 training</li>
+      <section class="hidden md:block" id="quali_right">
+      <h3 class="hidden mt-10 ">My qualifications:</h3>
+        <ul class="hidden ml-6 list-disc "   >
+          <li class="mb-2 ">Certified nutritionist</li>
+          <li class="mb-2 ">Certified fitness trainer</li>
+          <li class="mb-2 ">5 years of experience in 1: 1 training</li>
         </ul>
+      </section>
     </div>
+</section>
+<!-- only for =<sm  -->
+  <section class="md:hidden" id="quali-bottom">
+<h3 class="mt-5 md:mt-10 ">My qualifications:</h3>
+<ul class="ml-6 list-disc "   >
+  <li class="mb-2 leading-5 md:leading-normal">Certified nutritionist</li>
+  <li class="mb-2 leading-5 md:leading-normal">Certified fitness trainer</li>
+  <li class="mb-2 leading-5 md:leading-normal">5 years of experience in 1: 1 training</li>
+</ul>
+</section>
+
 
     <! - Prices and payment ->
-    <div id = "price_payment">
-      <h2>Prices and payment</h2>
+    <section class="mt-8"  id = "price_payment">
+    <div class="mx-auto lg:w-8/12" >
+      <h3>Prices and payment:</h3>
       <p>My most important goal is that you get ahead with your goals.</p>
       <p>In a free opening session we will discuss what you want to achieve and how much you can or want to spend. Then we are guaranteed to find a solution that suits you.</p>
     </div>
-
-    <! - Contact ->
-    <div id = "contact">
+</section>
+    <! - Contact ->  
+    <section  class="mt-8 mb-10" id = "contact">
+    <div class="grid w-8/12 grid-cols-2 gap-8 md:mx-auto">
       <div id = "email">
         <p>Your message:</p>
-        <a href="mailto:markusgonzales@gmail.com">Send an Email</a>
+        <a  class="flex items-center px-4 py-2 transition rounded shadow-sm bog-gray-300 hover:bg-gray-400 focus:ring-2" href="#">
+          
+           
+          <svg   class="h-4 mr-1 " xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
+         <span>Send an Email</span> 
+        
+        </a>
+         
+          
+          
+          
       </div>
-      <div id = "whatsApp_telefon">
+      <div id = "whatsApp_telephone">
         <p>WhatsApp:</p>
         1 222 555 44 33
       </div>
     </div>
         
-    </div>
-</body>
+
+  </section>
+ </body>
 </html>

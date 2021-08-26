@@ -5,7 +5,12 @@ module.exports = {
     debugScreens: {
       position: ['top', 'left'],
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        headline: ['Oswald']
+    }
+  }
+
   },
   variants: {
     extend: {},

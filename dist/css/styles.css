@@ -563,6 +563,66 @@ video {
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
 }
 
+h1 {
+  font-family: Oswald;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
+  font-family: Oswald;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-family: Oswald;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+P {
+  font-family: Oswald;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+li {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  li {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@font-face {
+  font-family: Oswald;
+
+  src: url(fonts\Oswald\Oswald-VariableFont_wght.ttf) format("​ttf​");
+}
+
 .container {
   width: 100%;
 }
@@ -22386,6 +22446,10 @@ video {
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-headline {
+  font-family: Oswald;
 }
 
 .text-xs {
@@ -53627,6 +53691,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .sm\:font-headline {
+    font-family: Oswald;
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -84852,6 +84920,10 @@ video {
 
   .md\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-headline {
+    font-family: Oswald;
   }
 
   .md\:text-xs {
@@ -116081,6 +116153,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-headline {
+    font-family: Oswald;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -147308,6 +147384,10 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .xl\:font-headline {
+    font-family: Oswald;
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -178533,6 +178613,10 @@ video {
 
   .\32xl\:font-mono {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .\32xl\:font-headline {
+    font-family: Oswald;
   }
 
   .\32xl\:text-xs {
