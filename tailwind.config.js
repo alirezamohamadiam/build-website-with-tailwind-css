@@ -1,7 +1,11 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  purge: {
+    enabled: true,
+    content: ['./dist/**/*.html'],
+    },
+  darkMode: 'class', // or 'media' or 
   theme: {
+    
     debugScreens: {
       position: ['top', 'left'],
     },
@@ -9,7 +13,7 @@ module.exports = {
       fontFamily: {
         headline: ['Oswald']
     }
-  }
+  
 
   },
   variants: {
@@ -18,4 +22,5 @@ module.exports = {
   plugins: [
     require('tailwindcss-debug-screens'),
   ]
+  }
 }
